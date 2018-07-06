@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09AAB5E8FBC2C27E16E2FD45 /* IosExt.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = IosExt.podspec; path = ../IosExt.podspec; sourceTree = "<group>"; };
-		26C58C7131EF4FEB0645E8D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		28D8BA1F901FA270C7454758 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		09AAB5E8FBC2C27E16E2FD45 /* IosExt.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IosExt.podspec; path = ../IosExt.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		26C58C7131EF4FEB0645E8D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		28D8BA1F901FA270C7454758 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2EC73242E7C50619649B1964 /* Pods-IosExt_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosExt_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosExt_Example/Pods-IosExt_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4C2E9CB88C2F05E70C69245D /* Pods_IosExt_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosExt_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* IosExt_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosExt_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
