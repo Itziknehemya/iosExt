@@ -46,6 +46,7 @@ extension UIView {
         UIGraphicsEndImageContext()
         
         // if no `rect` provided, return image of whole view
+        
         guard let image = wholeImage, let rect = rect else { completion(wholeImage); return }
         
         // otherwise, grab specified `rect` of image
