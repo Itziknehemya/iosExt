@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     
-    var isPresented: Bool {
+    public var isPresented: Bool {
         get {
             return !self.isHidden
         }
@@ -19,7 +19,7 @@ extension UIView {
         }
     }
     
-    func isScrolling () -> Bool {
+    public func isScrolling () -> Bool {
         if let scrollView = self as? UIScrollView {
             if (scrollView.isDragging || scrollView.isDecelerating) {
                 return true
@@ -33,12 +33,12 @@ extension UIView {
         return false
     }
     
-    func scrollContentOffsetY() -> CGPoint {
+    public func scrollContentOffsetY() -> CGPoint {
         let offset = self.frame.origin.y - self.frame.height
         return CGPoint(x: 0, y: offset)
     }
     
-    func snapshot(ofRect rect: CGRect? = nil, _ completion: (UIImage?) ->()) {
+    public func snapshot(ofRect rect: CGRect? = nil, _ completion: (UIImage?) ->()) {
         // snapshot entire view
         UIGraphicsBeginImageContextWithOptions(bounds.size, false, 0)
         drawHierarchy(in: bounds, afterScreenUpdates: false)
@@ -58,14 +58,14 @@ extension UIView {
         completion(snapMmage)
     }
     
-    func addShadow(withColor color: UIColor) {
+    public func addShadow(withColor color: UIColor) {
         self.layer.shadowColor = color.cgColor
         self.layer.shadowOffset = CGSize.zero
         self.layer.shadowRadius = 2
         self.layer.shadowOpacity = 1
     }
     
-    @discardableResult func addBorders(edges: UIRectEdge, color: UIColor = .lightGray, thickness: CGFloat = 1.0) -> [UIView] {
+    @discardableResult public func addBorders(edges: UIRectEdge, color: UIColor = .lightGray, thickness: CGFloat = 1.0) -> [UIView] {
         
         var borders = [UIView]()
         
@@ -143,7 +143,7 @@ extension UIView {
         return borders
     }
     
-    func makeRoundedCorners(_ radius: CGFloat = 5) {
+    public func makeRoundedCorners(_ radius: CGFloat = 5) {
         self.layer.cornerRadius = radius
         self.layer.masksToBounds = true
     }
@@ -158,9 +158,9 @@ extension UIView {
             self.alpha = 0
         })
     }
-
+    
     // Generate image from view
-    func convertToImage() -> UIImage? {
+    public func convertToImage() -> UIImage? {
         guard bounds != CGRect.zero else {
             print("CGRect bounds is zero!! Can't export view (\(self)) to image")
             return nil
